@@ -1,0 +1,60 @@
+footer.footer
+	.container
+		.footer-block
+			img.logo.footer-logo(src="img/icon/logo.svg", alt="logo")
+			nav.footer-nav
+				a.footer-link(href="#") Ресторанам 
+				a.footer-link(href="#") Курьерам
+				a.footer-link(href="#") Пресс-центр
+				a.footer-link(href="#") Контакты
+			.social-links
+			a.social-link(href="#")
+				img(src="img/social/instagram.svg", alt="instagram")
+			a.social-link(href="#")
+				img(src="img/social/fb.svg", alt="facebook")
+			a.social-link(href="#")
+				img(src="img/social/vk.svg", alt="vk")
+
+.modal.modal-cart
+	.modal-dialog
+		.modal-header
+			h3.modal-title Корзина
+			button.close ×
+		
+		.modal-body
+			.food-row
+				span.food-name Ролл угорь стандарт
+				strong.food-price 250 ₽
+				.food-counter
+					button.counter-button -
+					span.counter 1
+					button.counter-button +
+		
+			.food-row
+				span.food-name Ролл угорь стандарт
+				strong.food-price 250 ₽
+				.food-counter
+					button.counter-button -
+					span.counter 1
+					button.counter-button +
+
+		.modal-footer
+			span.modal-pricetag 1250 ₽
+			.footer-buttons
+				button.button.button-primary Оформить заказ
+				button.button.clear-cart Отмена
+.modal-auth
+	.modal-dialog.modal-dialog-auth
+		button.close-auth ×
+		form#logInForm
+			fieldset.modal-body
+				legend.modal-title Авторизация
+				label.label-auth
+					span Логин
+					input#login(type="text")
+				label.label-auth
+					span Пароль
+					input#password(type="password")
+			.modal-footer
+				.footer-buttons
+					button.button.button-primary.button-login(type="submit") Войти

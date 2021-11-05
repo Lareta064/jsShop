@@ -1,0 +1,47 @@
+main.main
+	.container
+		section.container-promo
+			section.promo.pizza
+				h1.promo-title
+				| Онлайн-сервис
+				br
+				| доставки еды на дом
+				p.promo-text.
+					Блюда из любимого ресторана привезет курьер в перчатках, маске и с антисептиком
+			section.promo.kebab
+				h1.promo-title
+				| Шашлыки на майские
+				br
+				| со скидкой 35%
+				p.promo-text.
+				
+					Закажите шашлыки в любом ресторане до 10 мая и получите скидку по промокоду OMAGAD
+		
+			section.promo.vegetables
+				h1.promo-title
+				| Скидка 20% на всю еду
+				br
+				| по промокоду LOVE.JS
+				p.promo-text.
+					Блюдо из ресторана привезут вместе с двумя подарочными книгами по фронтенду
+		
+			section.promo.sushi
+				h1.promo-title
+				| Сеты со скидкой до 30%
+				br
+				| в ресторанах
+				p.promo-text.
+					Скидки на сеты до 30 мая по промокоду DADADA
+		
+		section.restaurants
+			.section-heading
+				h2.section-title Рестораны
+				label.search
+					input.input.input-search(type="text", placeholder="Поиск блюд и ресторанов")
+			.cards.cards-restaurants
+				+card('Пицца плюс', '50', '4.5', ' 900', 'Пицца')
+				+card('Тануки', '60', '4.5', ' 1 200', 'Суши, роллы')
+				+card('FoodBand', '40', '4.5', ' 450', 'Пицца')
+				+card('Палки скалки', '55', '4.5', ' 500', 'Пицца')
+				+card('Гуси Лебеди', '75', '4.5', ' 1 000', 'Русская кухня')
+				+card('PizzaBurger', '45', '4.5', ' 700', 'Пицца')
